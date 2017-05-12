@@ -1,5 +1,6 @@
 FROM ubuntu:16.04
-MAINTAINER André Dumas
+# Original MAINTAINER André Dumas, based off of updates by kipters
+MAINTAINER Nicholas Knouf
 
 # Instructions as per https://developer.pebble.com/sdk/install/linux/
 
