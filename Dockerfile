@@ -31,11 +31,11 @@ RUN curl -sSL https://s3.amazonaws.com/assets.getpebble.com/pebble-tool/$PEBBLE_
 
 WORKDIR $PEBBLE_HOME
 
+#    && pip uninstall six -y \
 RUN /bin/bash -c " \
     pip install virtualenv \
     && virtualenv --no-site-packages .env \
     && source .env/bin/activate \
-    && pip uninstall six -y \
     && pip install -I 'six==1.9.0' \
     && pip install -r requirements.txt \
     && deactivate \
