@@ -9,6 +9,12 @@ RUN apt-get update && apt-get install -y \
     curl \
     python2.7-dev \
     python-pip \
+    bash-completion \ 
+    libsdl1.2debian \ 
+    libfdt1 \ 
+    libpixman-1-0 \ 
+    libglib2.0-dev \
+    libfreetype6-dev \ 
     libfreetype6
 
 # Install Pebble Tool
